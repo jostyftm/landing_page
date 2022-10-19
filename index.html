@@ -15,23 +15,143 @@
 <body>
     <header>
         <nav>
-            <div class="header-menu">
-                <a class="brand-logo">
-                    <img src="https://via.placeholder.com/120x40"/>
+            <div class="">
+                <a class="logo_img">
+                    <img src="./img/logo.png" width="80"/>
                 </a>
-                <button class="button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
             </div>
-            <div class="d-block">
-                <ul class="navbar-menu">
-                    <li><a>Inicio</a></li>
-                    <li><a>Acerca</a></li>
-                    <li><a>Habitaciones</a></li>
-                    <li><a>Contactanos</a></li>
-                </ul>
-            </div>
+            <input type="checkbox" id="check" />
+            <label for="check" class="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="navbar-menu">
+                <li><a>Inicio</a></li>
+                <li><a href="#why_section">Acerca</a></li>
+                <li><a href="#room_type_section">Habitaciones</a></li>
+                <li><a href="#location_section">Contactanos</a></li>
+            </ul>
         </nav>
+        <div class="banner-text">
+            <h1>Aqui va un mensaje llamativo, atractivo!</h1>
+            <span>Aqui va uan descripción que va acorde al titulo, este mensaje debe ser especifico y muy directo pra traer a todos los posibles clientes potenciales</span>
+            <div class="button_content">
+                <button class="button">Descubre mas</button>
+            </div>
+        </div>
     </header>
+    <main>
+        <section class="booking_section container">
+            <div class="booking_room">
+                <form>
+                    <div class="content_input">
+                        <i class="fa-regular fa-calendar"></i>
+                        <label for="">Fecha llegada</label>
+                        <input type="date" />
+                    </div>
+                    <div class="content_input">
+                        <i class="fa-solid fa-people-group"></i>
+                        <label for="">Fecha llegada</label>
+                        <input type="date" />
+                    </div>
+                    <div class="text-center">
+                        <button class="button">Buscar habitación</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="why_section" id="why_section">
+            <div>
+                <h2>¿Por que escogernos?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus at quae hic fugiat mollitia labore, iure dolor, fuga eveniet eos officiis fugit repellat dolorem exercitationem! Eaque adipisci magnam aliquid.
+                </p>
+            </div>
+            <div class="items_list">
+                <div class="item">
+                    <span class="bold_font">Calificación</span>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-bed fa-2x"></i>
+                    <span class="bold_font d_block">Habitaciones</span>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-wifi fa-2x"></i>
+                    <span class="bold_font d_block">Conectividad</span>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-bowl-food fa-2x"></i>
+                    <span class="bold_font d_block">Desayuno y almuerzo</span>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-car fa-2x"></i>
+                    <span class="bold_font d_block">Area de parqueadero</span>
+                </div>
+            </div>
+        </section>
+        <section class="room_type_section" id="room_type_section">
+            <h2 class="text-center">Tipos de habitaciones</h2>
+            <div class="items_list">
+                <div class="room_item">
+                    <img src="./img/room_1.jpg" />
+                    <h4>Básica</h4>
+                    <div class="content_prices">
+                        <span>$ 45.000</span>
+                    </div>
+                </div>
+                <div class="room_item">
+                    <img src="./img/room_2.jpg" />
+                    <h4>Básica</h4>
+                    <div class="content_prices">
+                        <span>$ 45.000</span>
+                    </div>
+                </div>
+                <div class="room_item">
+                    <img src="./img/room_3.jpg" />
+                    <h4>Básica</h4>
+                    <div class="d_flex content_prices">
+                        <span>$ 45.000</span>
+                        <span class="discount_price">$ 35.000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="location_section">
+            <div class="content_wrap">
+                <div class="wrapper_contact_location">
+                    <h4>Información de contacto</h4>
+                    <p>Puedes contactanos a traves de nuestros canales de comunicación.</p>
+                    <ul class="contact_networks">
+                        <li>
+                            <a>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>(+57 301 2345678)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@hotel.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Cra 78Y #12-45</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15922.749152039143!2d-77.06794775!3d3.87707205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1666136348306!5m2!1ses!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados (c) 2022</p>
+    </footer>
 </body>
 </html>
